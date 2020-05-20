@@ -8,10 +8,17 @@
 </head>
 
 <body>
-    <div id="main">
+    <div id="input_form">
         <textarea id="in_text" rows="4" cols="40"></textarea><br>
+    </div>
         ↓ ↑
-        <input type="button" value="生成" onclick="OnButtonClick()"><br>
+    <div id="output_form">
         <textarea id="out_text" rows="4" cols="40"></textarea>
     </div>
+
+    <div id="util">
+        <input type="button" id="create_text" value="生成" onclick="OnButtonClick(this)">
+        <input type="button" id="copy_clipboard" value="クリップボードへコピー" onclick="OnButtonClick(this)">
+    </div>
+
 </body>
